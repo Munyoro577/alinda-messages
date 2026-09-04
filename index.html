@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alinda Messages — Find the Perfect Message for Any Occasion</title>
+<meta name="description" content="Alinda Messages — a curated collection of messages for every occasion: good morning, good night, birthdays, love, friendship, motivation, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
+</head>
+<body class="no-scroll">
+
+<div id="verifyGate">
+  <div class="verify-logo">Alinda Messages</div>
+  <p class="verify-sub">Find the perfect message for any moment</p>
+  <div class="verify-card">
+    <h2>Welcome ✨</h2>
+    <p>Before you continue, please confirm the following to access Alinda Messages:</p>
+    <div class="verify-checkbox-row">
+      <input type="checkbox" id="ageCheckbox">
+      <label for="ageCheckbox">I confirm that I am at least <strong>13 years old</strong> and understand that this app is intended for general audiences.</label>
+    </div>
+    <div class="verify-checkbox-row">
+      <input type="checkbox" id="termsCheckbox">
+      <label for="termsCheckbox">I have read and agree to the <a href="terms.html" target="_blank">Terms & Conditions</a>, <a href="privacy.html" target="_blank">Privacy Policy</a>, and <a href="about.html" target="_blank">About</a> pages.</label>
+    </div>
+    <button class="verify-btn" id="enterBtn" disabled>Enter Alinda Messages →</button>
+    <p class="verify-footer">Built by <strong style="color:var(--c3)">Alinda Creation Hub</strong></p>
+  </div>
+</div>
+
+<div id="appContainer">
+  <header class="app-header">
+    <div class="app-logo">Alinda Messages</div>
+    <p class="app-tagline">Find the perfect message for any occasion</p>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="🔍 Search messages...">
+  </div>
+
+  <div class="filters" id="filters"></div>
+
+  <div class="card-wrapper">
+    <div class="card fade-in" id="card">
+      <span class="emoji" id="emoji">💬</span>
+      <p class="message" id="message">Loading messages...</p>
+      <span class="category-tag" id="tag">—</span>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="action-btn primary" id="shuffle">🔄 New Message</button>
+    <button class="action-btn" id="copy">📋 Copy</button>
+    <button class="action-btn" id="share">📤 Share</button>
+  </div>
+
+  <div class="toast" id="toast">Copied!</div>
+
+  <footer class="app-footer">
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <div class="footer-brand">
+      Built by <strong>Alinda Creation Hub</strong><br>
+      © 2026 Alinda Messages. All rights reserved.
+    </div>
+  </footer>
+</div>
+
+<script src="messages.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
